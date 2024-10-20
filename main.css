@@ -1,0 +1,53 @@
+@import url("css/about.css");
+@import url("css/alert.css");
+@import url("css/contact.css");
+@import url("css/footer.css");
+@import url("css/form.css");
+@import url("hero.css");
+@import url("loader.css");
+@import url("css/navs.css");
+@import url("css/projects.css");
+@import url("css/theme.css");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap");
+
+/* 
+.content {
+  display: none;
+} */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* down this */
+  /* cursor: not-allowed;
+    cursor:progress;
+    pointer-events: none;
+    user-select: none; */
+  scrollbar-color: #0188ff #fff;
+  scrollbar-width: thin;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  font-family: Poppins, sans-serif;
+  position: relative;
+}
+.container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
