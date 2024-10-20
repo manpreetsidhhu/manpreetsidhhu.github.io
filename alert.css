@@ -1,0 +1,40 @@
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2196f3;
+  padding: 20px;
+  border: solid 2px #1769a7;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.custom-alert button {
+  background-color: #fff;
+  border: none;
+  font-size: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #2196f3;
+  padding: 10px 20px;
+  cursor: pointer;
+  &:hover {
+    padding-bottom: 10px;
+    color: black;
+  }
+}
+.custom-alert {
+  animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
