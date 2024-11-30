@@ -19,13 +19,13 @@
   .hero {
     height: auto;
     padding: 11rem 0;
-    margin-top: 5px;
+    margin-top: 50px;
   }
 }
 .hero-main {
   align-items: center;
   display: flex;
-  gap: 10rem;
+  gap: 0rem;
   justify-content: center;
   position: relative;
 }
@@ -66,7 +66,7 @@
 .hero-text {
   display: flex;
   flex-direction: column;
-  max-width: 50rem;
+  max-width: 60rem;
   position: relative;
 }
 .hero-text h1 {
@@ -135,9 +135,8 @@
 /* hero image morph scale */
 
 .hero-img {
-  -webkit-animation: morph 10s ease-in-out infinite,
-    scale 10s ease-in-out infinite;
-  animation: morph 10s ease-in-out infinite, scale 10s ease-in-out infinite;
+  -webkit-animation: morph 10s ease-in-out infinite;
+  animation: morph 10s ease-in-out infinite;
   background-image: url(media/mss4.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -159,63 +158,35 @@
 @-webkit-keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    background-position: 50% 50%;
   }
   25% {
     border-radius: 40% 60% 50% 50%/40% 60% 40% 60%;
-    background-position: 60% 40%;
   }
   50% {
     border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    background-position: 40% 60%;
   }
   75% {
     border-radius: 50% 50% 40% 60%/70% 40% 60% 30%;
-    background-position: 70% 30%;
   }
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    background-position: 50% 50%;
   }
 }
 @keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    background-position: 50% 50%;
   }
   25% {
     border-radius: 40% 60% 50% 50%/40% 60% 40% 60%;
-    background-position: 60% 40%;
   }
   50% {
     border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    background-position: 40% 60%;
   }
   75% {
     border-radius: 50% 50% 40% 60%/70% 40% 60% 30%;
-    background-position: 70% 30%;
   }
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    background-position: 50% 50%;
-  }
-}
-@-webkit-keyframes scale {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-@keyframes scale {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
   }
 }
 

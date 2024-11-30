@@ -3,6 +3,7 @@ function sendMail() {
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
   var message = document.getElementById("message").value;
+  var rating = document.querySelector('input[name="rating"]:checked')?.value || "";
 
   // Check if any field is empty
   if (name === "" || email === "" || message === "") {
@@ -21,6 +22,7 @@ function sendMail() {
     name: name,
     email: email,
     message: message,
+    rating: rating,
   };
 
   const serviceID = "service_nhgr81l";
@@ -32,6 +34,7 @@ function sendMail() {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("message").value = "";
+      document.querySelector('input[name="rating"]:checked').checked = true;
       console.log(res);
       count++;
       document.getElementById("form-status").innerText =
@@ -75,7 +78,7 @@ window.onload = function () {
 
   setTimeout(() => {
     loader.style.display = "none";
-  }, 1000);
+  }, 500);
 };
 
 {/* <script>
